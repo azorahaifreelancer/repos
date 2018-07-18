@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Repos NS</title>
+</head>
+
+<body>
+<h1>My Repos List</h1>
+<script id="some-template" type="text/x-handlebars-template"> <table>
+    <thead> 
+        <th>Nome</th> 
+        <th>Repositórios</th> 
+        <th>Links</th>
+    </thead> 
+    <tbody> 
+        {{#repos}} 
+        <tr> 
+            <td>{{Name repo}}</td> 
+            <td>{{Desc}}</td> 
+            <td><a href="https://github.com/azorahaifreelancer/{{repo}}">@{{repo}}</a></td> 
+        </tr> 
+        {{/users}} 
+    </tbody> 
+</table> 
+</script>
+</body>
+
+</html>
